@@ -1,1 +1,1 @@
-first commit usless readme
+# catJAM
