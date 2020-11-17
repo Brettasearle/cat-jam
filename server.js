@@ -7,7 +7,6 @@ require('dotenv').config();
 
 // require gallery module
 const tickets = require('./tickets');
-const jammers = require('./jammers');
 
 //create express app
 const app = express();
