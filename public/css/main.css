@@ -220,26 +220,7 @@ footer {
 }
 /* hamburger menu styles end */
 
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-* {
-	box-sizing: border-box;
-}
-
-body {
-	background-color: #28223F;
-	font-family: Montserrat, sans-serif;
-	
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-
-	min-height: 100vh;
-	margin: 0;
-}
-
+/* profile card starts */
 h3 {
 	margin: 10px 0;
 }
@@ -281,7 +262,13 @@ p {
 .card-container .round {
 	border: 1px solid #03BFCB;
 	border-radius: 50%;
-	padding: 7px;
+  padding: 7px;
+  max-width: 120px;
+}
+
+/* addition for profile img sizing */
+.card-container img {
+  max-width: 100%;
 }
 
 button.primary {
@@ -319,29 +306,4 @@ button.primary.ghost {
 	font-size: 12px;
 	margin: 0 7px 7px 0;
 	padding: 7px;
-}
-
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
 }

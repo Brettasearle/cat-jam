@@ -6,81 +6,59 @@
   <title><%- title %></title>
   <link rel="stylesheet" href="css/main.css"/>
 </head>
-
 <body>
-  <div class="container">
+  
+    <div class="container">
 
 <!-- start hamburger menu nav -->
 <%- include('../partials/nav'); %>
 <!-- end hamburger menu nav -->
 
-    <div class="main">
-      <!-- TO DO make profile cards -->
-      
-      <div class="card-container">
-        <span class="pro">PRO</span>
-        <img
-            class="round"
-            src="/public/images/catjammer-1.jpg"
-            alt="user"
-        />
-        <h3>Micheal Mardell</h3>
-        <h6>Calgary</h6>
-        <p>
+    <div class="main"><!-- main -->
+
+        <div class="card-container">
+            <span class="pro">PRO</span>
+            <img class="round" src="/images/catjammer-1.jpg" alt="user"/>
+            <h3>Micheal Mardell</h3>
+            <h6>Calgary</h6>
+            <p>
             Web developer <br>
             front-end developer
-        </p>
-        <div class="buttons">
-            <button>
-                Email
-            </button>
-            <button>
-                Following
-            </button>
-    </div>
-</div>
-    <div class="card-container">
-      <span class="pro">PRO</span>
-      <img
-          class="round"
-          src="/public/images/catjammer-2.jpg"
-          alt="user"
-      />
-      <h3>Brett Searle</h3>
-      <h6>Calgary</h6>
-      <p>
-          Web developer<br />
-          front-end developer
-      </p>
-      <div class="buttons">
-          <button >
-              Email
-          </button>
-          <button >
-              Following
-          </button>
-      </div>
-    </div>
-    <div class="card-container">
-      <span class="pro">PRO</span>
-      <img
-          class="round"
-          src="/public/images/catjammer-3.jpg"
-          alt="user"
-      />
-      <h3>Offanel Genelien</h3>
-      <h6>Calgary</h6>
-      <p>
-          Web developer <br />
-          front-end developer
-      </p>
-      <div class="buttons">
-          <button>
-              Email
-          </button>
-          <button>
-              Following
-          </button>
+            </p>
+            <div class="buttons">
+                <button>Email</button>
+                <button>Following</button>
+            </div>
+        </div>
+        
+        <div class="card-container">
+            <span class="pro">PRO</span>
+            <img class="round" src="/images/catjammer-2.jpg" alt="user"/>
+            <h3>Brett Searle</h3>
+            <h6>Calgary</h6>
+            <p>
+            Web developer<br>
+            front-end developer
+            </p>
+                <div class="buttons">
+                    <button>Email</button>
+                    <button>Following</button>
+                </div>
+        </div>
+
+        <div class="card-container">
+            <span class="pro">PRO</span>
+            <img class="round" src="/images/catjammer-3.jpg" alt="user"/>
+            <h3>Offanel Genelien</h3>
+            <h6>Calgary</h6>
+            <p>
+             Web developer <br>
+            front-end developer
+            </p>
+            <div class="buttons">
+                <button>Email</button>
+                <button>Following</button>
+            </div>
         </div>
     </div>
     
@@ -88,6 +66,7 @@
 <%- include('../partials/footer'); %>    
 <!-- end sticky footer -->
 
-  </div>
+  </div> <!-- /main -->
+
 </body>
 </html>
