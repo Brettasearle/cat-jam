@@ -72,6 +72,11 @@ app.get('/admin', function(request, response){
   })
 });
 
+// single image
+app.get('/api/v0/gallery/:id', function(request, response){
+  response.send(`<img src="/images/venue-${request.params.id}.jpg">`)
+});
+
 // json endpoint for gallery
 app.get('/api/v0/gallery', function(request, response){
   response.json(tickets);
