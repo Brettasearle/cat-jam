@@ -244,7 +244,9 @@ p {
 	position: relative;
 	width: 350px;
 	max-width: 100%;
-	text-align: center;
+  text-align: center;
+  
+
 }
 
 .card-container .pro {
@@ -265,17 +267,13 @@ p {
   padding: 7px;
   max-width: 120px;
 }
+
+/* this is the knob to fuck with */
 .all-card {
-  margin: auto;
-
-
-
-}
-
-.all-card-container{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
 }
 
 /* addition for profile img sizing */
