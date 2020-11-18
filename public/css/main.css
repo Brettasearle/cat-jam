@@ -265,6 +265,18 @@ p {
   padding: 7px;
   max-width: 120px;
 }
+.all-card {
+  margin: auto;
+
+
+
+}
+
+.all-card-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
 /* addition for profile img sizing */
 .card-container img {
