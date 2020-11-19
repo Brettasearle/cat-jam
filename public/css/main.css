@@ -319,7 +319,7 @@ button.primary.ghost {
 }
 
 /* form css */
-/* code could be cleaned up a little */
+/* code could be cleaned up a little feel free to make things look a little less jank ill play with it later! */
 
 fieldset{
   max-width: 60ch;
@@ -329,10 +329,11 @@ fieldset{
   color:#d9514eff;
   border: 0px;
   margin-bottom: 40vh;
+  
 
 }
 
-form {
+.sub-form {
   color: #d9514eff;
   width: 30ch;
   height: 25ch;
@@ -354,6 +355,7 @@ legend {
   color: #d9514eff;
   max-width: 25ch;
   margin-bottom: 15px;
+  
 }
 
 label {

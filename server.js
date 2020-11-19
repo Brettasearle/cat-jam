@@ -7,9 +7,16 @@ require('dotenv').config();
 
 // require gallery module
 const tickets = require('./tickets');
+//subform
+const subscriberRouter = require('./routes/subscriberRoutes.js');
 
 //create express app
 const app = express();
+//(subscribe form) make sure it comes back as json
+app.use(express.json());
+
+mongoose.connect('mongodb+srv://cat-jam:cat-jam@cluster0.a1zfn.mongodb.net/cat-jammers?retryWrites=true&w=majority'), {useNewUrlParser: true
+}();//this is were we ended when tony pulled us outta break this may be missspelled^
 
 // view engine
 app.set('view engine', 'ejs');

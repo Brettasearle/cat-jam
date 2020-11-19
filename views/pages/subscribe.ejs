@@ -14,11 +14,12 @@
 <!-- start hamburger menu nav -->
 <%- include('../partials/nav'); %>
 <!-- end hamburger menu nav -->
-<div class="all-form">
+
+<div class="main">
 
   <fieldset>
-    <legend>Register for an account,</legend>
-    <form class="form">
+    <legend><%- tagline %></legend>
+    <form class="sub-form" method="POST" action="#">
       
       <div> 
         <label for="name">Name:*</label>
@@ -39,8 +40,7 @@
   </fieldset>
 </div>
   
-    <div class="main">
-      <%- tagline %>
+  
     </div>
     
 
@@ -48,6 +48,6 @@
 <%- include('../partials/footer'); %>    
 <!-- end sticky footer -->
 
-  </div>
+  
 </body>
 </html>
