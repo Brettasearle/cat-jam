@@ -14,6 +14,11 @@ Morbi dictum leo non tellus hendrerit viverra. Duis ut arcu sed dolor consequat 
 
 ## Attributions
 [**Unsplash Free Use Images**](https://unsplash.com/)
+
+*Homepage*
+- [hero-image](https://unsplash.com/photos/ojVMh1QTVGY) / [credit](https://unsplash.com/@oscartothekeys)
+
+*Gallery*
 - [venue-1](https://unsplash.com/photos/m1WZS5ye404) / [credit](https://unsplash.com/@vishnurnair)
 - [venue-2](https://unsplash.com/photos/eXVd7gDPO9A) / [credit](https://unsplash.com/@actionvance)
 - [venue-3](https://unsplash.com/photos/ZhQCZjr9fHo) / [credit](https://unsplash.com/@adityachinchure)
@@ -25,12 +30,17 @@ Morbi dictum leo non tellus hendrerit viverra. Duis ut arcu sed dolor consequat 
 - [venue-9](https://unsplash.com/photos/hgO1wFPXl3I) / [credit](https://unsplash.com/@arstyy)
 - [venue-10](https://unsplash.com/photos/fZGl__1jt3M) / [credit](https://unsplash.com/@noiseporn)
 
+*Profiles*
+- [catjammer-1](https://unsplash.com/photos/5s0MuxRGf6M) / [credit](https://unsplash.com/@callumlwale)
+- [catjammer-2](https://unsplash.com/photos/7GX5aICb5i4) / [credit](https://unsplash.com/@jaehunpark)
+- [catjammer-3](https://unsplash.com/photos/SAKLELG-pO8) / [credit](https://unsplash.com/@tim_frontn)
 
-[**Attribution 2**](www.example.com)
-- Duis ut arcu sed dolor [consequat tristique](www.example.com).
+[**Muhammad Asif**](https://codeconvey.com/)
+- [Responsive hamburger menu w/ CSS only](https://codeconvey.com/responsive-hamburger-menu-css-only/)
 
-[**Attribution 3**](www.example.com)
-- Duis ut arcu sed dolor consequat tristique.
+[**Florin Pop**](https://www.florin-pop.com/)
+- [#30 Profile Card Design](https://codepen.io/FlorinPop17/pen/EJKgKB)
 
-[**Attribution 4**](www.example.com)
-- Duis ut arcu sed dolor consequat tristique.
+[**CSS Tricks**](https://css-tricks.com)
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
