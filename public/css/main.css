@@ -317,3 +317,50 @@ button.primary.ghost {
 	margin: 0 7px 7px 0;
 	padding: 7px;
 }
+
+/* form css */
+/* code could be cleaned up a little */
+
+fieldset{
+  max-width: 60ch;
+  display: flex;
+  margin: auto;
+  margin-top: 30vh;
+  color:#d9514eff;
+  border: 0px;
+  margin-bottom: 40vh;
+
+}
+
+form {
+  color: #d9514eff;
+  width: 30ch;
+  height: 25ch;
+  margin: auto;
+  border: 4px solid #d9514eff;
+  border-radius: 1rem;
+  background-color:  #414141;
+  padding-left: 50px;
+  padding-top: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  
+}
+
+
+legend {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  color: #d9514eff;
+  max-width: 25ch;
+  margin-bottom: 15px;
+}
+
+label {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  font-size: 30px;
+  
+  
+}

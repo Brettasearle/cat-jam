@@ -8,15 +8,41 @@
 </head>
 
 <body>
+  
   <div class="container">
 
 <!-- start hamburger menu nav -->
 <%- include('../partials/nav'); %>
 <!-- end hamburger menu nav -->
+<div class="all-form">
 
+  <fieldset>
+    <legend>Register for an account,</legend>
+    <form class="form">
+      
+      <div> 
+        <label for="name">Name:*</label>
+        <input type="name" name="name" id="name" placeholder="First name" required>
+      </div>
+      
+      <div> 
+        <label for="email">Email:*</label>
+        <input type="email" name="email" id="email" placeholder="Email address" required>
+      </div>
+      
+      <div>
+        <button type="submit">Submit</button>
+        
+      </div>
+      
+    </form>
+  </fieldset>
+</div>
+  
     <div class="main">
       <%- tagline %>
     </div>
+    
 
 <!-- start sticky footer -->
 <%- include('../partials/footer'); %>    
