@@ -16,7 +16,7 @@ Fairly large collaboration project surrounding Javascript and JSON endpoints. We
  - Heroku deployment
 
 [**Offanel Genelien**](https://github.com/offanelog)
- - Team page HTML/CSS.
+ - Team page HTML/CSS
 
 [**Michael Mardell**](https://github.com/aggressiveperfector)
  - Site structure
