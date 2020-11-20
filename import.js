@@ -2,10 +2,13 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
 
 // Import seed data
-const dbSeed = require(`./seeds/tickets.js`);
-
+const gallerySeed = require(`./seeds/tickets.js`);
+const subscibeSeed = require('./seeds/subscribe');
 // Define model
-const Ticket = require(`./models/ticket.js`);
+
+const ticket = require('./models/ticket.js');
+const subscibe = require('./models/subscibe.js');
+
 
 /*******************************/
 /* Mongoose/MongoDB Connection */
@@ -26,7 +29,12 @@ db.once('open', function() {
   console.log('CONNECTED TO DATABASE');
 });
 
-Comic.insertMany(dbSeed, function(error, comic) {
+ticket.insertMany(gallerySeed, function(error, ticket) {
+  console.log('Data import completed.')
+  mongoose.connection.close();
+});
+
+subscribe.insertMany(subscibeSeed, function(error, ticket) {
   console.log('Data import completed.')
   mongoose.connection.close();
 });
