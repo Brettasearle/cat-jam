@@ -9,8 +9,11 @@ const ticketSchema = new mongoose.Schema(
   {
     id:           Number,
     title:        String,
-    credit:       String,
+    width:        Number,
+    height:       Number,
     url:          String,
+    credit:       String,
+    imagePath:    String,
   }
 );
 

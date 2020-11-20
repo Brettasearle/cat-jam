@@ -7,7 +7,7 @@ const subscibeSeed = require('./seeds/subscribe');
 // Define model
 
 const ticket = require('./models/ticket.js');
-const subscibe = require('./models/subscibe.js');
+const subscribe = require('./models/subscribe.js');
 
 
 /*******************************/
@@ -34,7 +34,7 @@ ticket.insertMany(gallerySeed, function(error, ticket) {
   mongoose.connection.close();
 });
 
-subscribe.insertMany(subscibeSeed, function(error, ticket) {
-  console.log('Data import completed.')
-  mongoose.connection.close();
-});
+// subscribe.insertMany(subscibeSeed, function(error, ticket) {
+//   console.log('Data import completed.')
+//   mongoose.connection.close();
+// });

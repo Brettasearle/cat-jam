@@ -6,25 +6,29 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 // require gallery module
-const tickets = require('./tickets');
-//subform
-const subscribeRouter = require('./routes/subscribeRoutes.js');
+const Tickets = require('./models/ticket');
+// const Subscribers = require('./models/subscribe');
+// const Members = require('./models/member.js');
 
 //create express app
 const app = express();
-//(subscribe form) make sure it comes back as json
-app.use(express.json());
-
-mongoose.connect('mongodb+srv://cat-jam:cat-jam@cluster0.a1zfn.mongodb.net/cat-jammers?retryWrites=true&w=majority', {useNewUrlParser: true
-});
-
-app.use(subscribeRouter);
 
 // view engine
 app.set('view engine', 'ejs');
 
 // middleware
 app.use(express.static(path.join(__dirname, 'public')));
+
+// set up mongoose connection
+mongoose.connect(process.env.MONGODB_URL, { useUnifiedTopology: true,useNewUrlParser: true });
+
+var db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+db.once('open', function() {
+  console.log('Connected to DB...');
+});
 
 // homepage render
 app.get('/', function(request, response){
@@ -83,13 +87,28 @@ app.get('/admin', function(request, response){
 
 // json endpoint for gallery
 app.get('/api/v0/gallery', function(request, response){
-  response.json(tickets);
+  Tickets.find(function(err, data) {
+    if (err || data.length===0) {
+      response.send('unable to find venues');
+    }
+    else {
+      response.json(data);
+    }
+  });
 });
 
 // json endpoint for gallery single image
 app.get('/api/v0/gallery/:id', function(request, response){
-  response.send(`<img src="/images/venue-${request.params.id}.jpg">`)
+  Tickets.find({id: request.params.id}, function(err,data) {
+    if (err || data.length===0) {
+      response.send('unable to find venue location');
+    }
+    else {
+      response.json(data);
+    }
+  });  
 });
+
 
 // middleware
 app.use(function(req, res) {
