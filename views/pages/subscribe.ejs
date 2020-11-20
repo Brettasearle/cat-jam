@@ -18,18 +18,18 @@
 
 <div class="main">
   <form class="sub-form" method="post" action="/subscribers">
-    <legend><%- tagline %></legend>
+    <legend class="label-text"><%- tagline %></legend>
     <fieldset>
       <div> 
-        <label for="name">Name:*</label>
-        <input type="text" name="name" id="name" placeholder="First name" required>
+        <label for="name" class="label-text">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Full name" required>
       </div>
       <div> 
-        <label for="email">Email:*</label>
-        <input type="email" name="email" id="email" placeholder="Email address" required>
+        <label for="email" class="label-text">Email:</label>
+        <input type="email" name="email" id="email" placeholder="example@address.com" required>
       </div>
       <div>
-        <button type="submit">Submit</button>
+        <button type="submit" class="form-button">Submit</button>
       </div>
     </fieldset>
   </form>
