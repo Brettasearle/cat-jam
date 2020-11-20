@@ -7,7 +7,7 @@ require('dotenv').config();
 
 // require gallery module
 const Tickets = require('./models/ticket');
-// const Subscribers = require('./models/subscribe');
+const Subscribers = require('./models/subscribe');
 // const Members = require('./models/member.js');
 
 //create express app
@@ -19,13 +19,13 @@ app.set('view engine', 'ejs');
 // middleware
 app.use(express.static(path.join(__dirname, 'public')));
 
+// handle form data
+app.use(express.urlencoded({ extended: true }));
+
 // set up mongoose connection
 mongoose.connect(process.env.MONGODB_URL, { useUnifiedTopology: true,useNewUrlParser: true });
-
 var db = mongoose.connection;
-
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-
 db.once('open', function() {
   console.log('Connected to DB...');
 });
@@ -105,6 +105,32 @@ app.get('/api/v0/gallery/:id', function(request, response){
     }
     else {
       response.json(data);
+    }
+  });  
+});
+
+// endpoint for subscribers
+app.get('/api/v0/subscribers', function(request, response){
+  Subscribers.find(function(err, data){
+    if (err || data.length===0) {
+      response.send('unable to find subscribers');
+    }
+    else {
+      response.json(data);
+    }
+  });
+});
+
+// post form data
+app.post('/subscribers', function(request, response){
+  const subscriber = new Subscribers(request.body);
+  console.log(request);
+  subscriber.save(function(error){
+    if (error) {
+      response.status(500).send(error);
+    }
+    else {
+      response.status(200).send(`<p>Hey, ${request.body.name}! Thanks, we'll send updates to ${request.body.email}.</p>`);
     }
   });  
 });

@@ -54,6 +54,15 @@
   width: 50vmin;
   height: auto;
 }
+
+.admin-data {
+  background-color: cyan;
+}
+
+.admin-item {
+  background-color: pink;
+}
+
 /* footer starts */
 footer {
   background-color: grey;
