@@ -12,7 +12,7 @@ export const subscribers = fetch(`${window.location.origin}/api/v0/subscribers`)
     subscribers.forEach((subscriber) => {
       output += `
         <div class="admin-item">
-          <p>Name: ${subscriber.name}</p>
+          <h3>Name: ${subscriber.name}</h3>
           <p>Email: ${subscriber.email}</p>
         </div>
       `;

@@ -29,6 +29,16 @@
   padding: 1rem;
 }
 
+.hero-body {
+background-color: #02899C;
+
+  color: white;
+  font-size: 3vmax;
+  
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
 /* gallery images display start */
 .gallery {
   display: grid;
@@ -55,12 +65,27 @@
   height: auto;
 }
 
+/* admin styles */
+.admin-container {
+  width: 44ch;
+  margin: 0 auto;
+}
+
+.admin-header {
+  padding-top: 1rem;
+}
+
 .admin-data {
-  background-color: cyan;
+  max-width: 44ch;
+  margin: 0 auto;
 }
 
 .admin-item {
-  background-color: pink;
+  background-color: whitesmoke;
+
+  max-width: 44ch;
+  margin: 0 auto;
+  padding: 0 0.5rem;
 }
 
 /* footer starts */
