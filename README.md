@@ -12,9 +12,11 @@ Fairly large collaboration project surrounding Javascript and JSON endpoints. We
 [**Brett Searle**](https://github.com/Brettasearle)
  - Repo owner/project manager
  - Subscribe form and database integration
+ - Db seeds
+ - Heroku deployment
 
 [**Offanel Genelien**](https://github.com/offanelog)
- - Team page HTML/CSS.
+ - Team page HTML/CSS
 
 [**Michael Mardell**](https://github.com/aggressiveperfector)
  - Site structure
