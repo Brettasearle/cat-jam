@@ -1,16 +1,19 @@
 # CPNT262 Final: Deployed Product/Services Website
 by Brett Searle, Offanel Genelien & Michael Mardell
 
-TD = TO DO / Placeholder
-
 [Project Link](www.example.com) link. TD
 
-[GitHub Repo](www.example.com) link. TD
+[GitHub Repo](https://github.com/Brettasearle/cat-jam) link.
 
-## Comments TD
-Morbi dictum leo non tellus hendrerit [viverra](www.example.com). Duis ut arcu sed dolor consequat tristique. Curabitur tincidunt tempus interdum. Aliquam laoreet diam sed [tincidunt](www.example.com) accumsan. Sed nulla ante, euismod vel rutrum eget, tristique id eros. Praesent non scelerisque felis. Morbi aliquet ornare suscipit. Suspendisse potenti.
+## Comments
+Fairly large collaboration project surrounding Javascript and JSON endpoints. We chose a ticket/concert services site that provides music related travel opportunities. 
 
-Morbi dictum leo non tellus hendrerit viverra. Duis ut arcu sed dolor consequat tristique. Curabitur tincidunt tempus interdum. Aliquam laoreet diam sed tincidunt accumsan. Sed nulla ante, euismod vel rutrum eget, tristique id eros. Praesent non scelerisque felis. Morbi aliquet ornare suscipit. Suspendisse potenti. 
+## Charter
+[**Brett Searle**](https://github.com/Brettasearle) - Subscribe form and database integration.
+
+[**Offanel Genelien**](https://github.com/offanelog) - Team page HTML/CSS.
+
+[**Michael Mardell**](https://github.com/aggressiveperfector) - Site structure, model and data creation, image optimization, and 3rd party element implementation. Homepage, gallery, and site styling and creation.
 
 ## Attributions
 [**Unsplash Free Use Images**](https://unsplash.com/)
@@ -40,6 +43,12 @@ Morbi dictum leo non tellus hendrerit viverra. Duis ut arcu sed dolor consequat 
 
 [**Florin Pop**](https://www.florin-pop.com/)
 - [#30 Profile Card Design](https://codepen.io/FlorinPop17/pen/EJKgKB)
+
+[**Patrick Bello**](https://github.com/mayorbcode)
+- Javascript support and code review. Extremely helpful syntax corrections.
+
+[**acidtone**](https://github.com/acidtone)
+- [In class](https://github.com/sait-wbdv/in-class) & [sample](https://github.com/sait-wbdv/sample-code) code helped a lot.
 
 [**CSS Tricks**](https://css-tricks.com)
 - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
