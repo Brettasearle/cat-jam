@@ -256,7 +256,7 @@ footer {
 
 /* profile card starts */
 h3 {
-	margin: 10px 0;
+  margin: 10px 0;
 }
 
 h6 {
@@ -280,7 +280,6 @@ p {
 	max-width: 100%;
   text-align: center;
   overflow: hidden;
-
 }
 
 .card-container .pro {
@@ -302,12 +301,14 @@ p {
   max-width: 120px;
 }
 
-/* this is the knob to fuck with */
+/* all of the cards */
 .all-card {
   display: grid;
   grid-template-columns:minmax(300px,1fr);
   gap: 2rem;
   justify-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 /* addition for profile img sizing */
@@ -322,7 +323,7 @@ button.primary {
 	color: #231E39;
 	font-family: Montserrat, sans-serif;
 	font-weight: 500;
-	padding: 10px 25px;
+  padding: 10px 25px;
 }
 
 button.primary.ghost {
@@ -351,12 +352,13 @@ button.primary.ghost {
 	margin: 0 7px 7px 0;
 	padding: 7px;
 }
-
-@media screen and (min-width:720px){
+/* made it responsive for differnt screen sizes */
+@media screen and (min-width:850px){
   .all-card{
     grid-template-columns:repeat(3,1fr);
   }
 }
+
 
 
 
