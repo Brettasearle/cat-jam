@@ -279,7 +279,7 @@ p {
 	width: 350px;
 	max-width: 100%;
   text-align: center;
-  
+  overflow: hidden;
 
 }
 
@@ -305,8 +305,8 @@ p {
 /* this is the knob to fuck with */
 .all-card {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns:minmax(300px,1fr);
+  gap: 2rem;
   justify-items: center;
 }
 
@@ -351,6 +351,16 @@ button.primary.ghost {
 	margin: 0 7px 7px 0;
 	padding: 7px;
 }
+
+@media screen and (min-width:720px){
+  .all-card{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+
+
+
+
 
 /* form css */
 /* code could be cleaned up a little feel free to make things look a little less jank ill play with it later! */
