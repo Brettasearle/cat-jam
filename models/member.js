@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+// no longer using this model, but kept it because of group members change
+
 // define our schema
 // reference: https://mongoosejs.com/docs/guide.html
 /*

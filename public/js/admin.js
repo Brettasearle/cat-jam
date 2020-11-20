@@ -1,4 +1,4 @@
-// asynchronous fetch
+// asynchronous fetch for subscribe form
 export const subscribers = fetch(`${window.location.origin}/api/v0/subscribers`)
   .then((response) => {
     // JSON returned from server
