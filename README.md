@@ -9,11 +9,19 @@ by Brett Searle, Offanel Genelien & Michael Mardell
 Fairly large collaboration project surrounding Javascript and JSON endpoints. We chose a ticket/concert services site that provides music related travel opportunities. 
 
 ## Charter
-[**Brett Searle**](https://github.com/Brettasearle) - Subscribe form and database integration.
+[**Brett Searle**](https://github.com/Brettasearle)
+ - Repo owner/project manager
+ - Subscribe form and database integration
 
-[**Offanel Genelien**](https://github.com/offanelog) - Team page HTML/CSS.
+[**Offanel Genelien**](https://github.com/offanelog)
+ - Team page HTML/CSS.
 
-[**Michael Mardell**](https://github.com/aggressiveperfector) - Site structure, model and data creation, image optimization, and 3rd party element implementation. Homepage, gallery, and site styling and creation.
+[**Michael Mardell**](https://github.com/aggressiveperfector)
+ - Site structure
+ - Model and data creation
+ - Image optimization
+ - 3rd party element implementation
+ - Homepage, Gallery, and site creation/styling 
 
 ## Attributions
 [**Unsplash Free Use Images**](https://unsplash.com/)
