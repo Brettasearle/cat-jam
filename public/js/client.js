@@ -12,7 +12,7 @@ fetch (`${window.location.origin}/api/v0/gallery`)
 
   tickets.forEach(function(tickets) {
     output += `<figure class="gallery-item">
-                <a href="/api/v0/gallery/${tickets.id}"><img src="images/${tickets.imagePath}.jpg" alt="catJAMMERS: ${tickets.title}" width="${tickets.width}" height="${tickets.height}"></a>
+                <a href="/gallery/${tickets.id}"><img src="images/${tickets.imagePath}.jpg" alt="catJAMMERS: ${tickets.title}" width="${tickets.width}" height="${tickets.height}"></a>
                 <figcaption>
                 ${tickets.title} - <a href="${tickets.credit}" target="_blank">Photog</a> - <a href="${tickets.url}" target="_blank">Source</a>
                 </figcaption>

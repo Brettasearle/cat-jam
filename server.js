@@ -52,6 +52,19 @@ app.get('/gallery', function(request, response){
     })
 });
 
+// gallery single page render
+app.get('/gallery/:id', function(request, response){
+  Tickets.findOne({id:request.params.id},function(err, data) {
+    if (err || data.length===0) {
+      response.send('unable to find venues');
+    }
+    else {
+      response.send(`<img src="/images/${data.imagePath}.jpg" alt="catJAMMERS: ${data.title}">`)
+    }
+  });
+});
+
+
 // team page render
 app.get('/team', function(request, response){
   response.render('pages/team',
