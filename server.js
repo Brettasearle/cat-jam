@@ -109,7 +109,6 @@ app.get('/api/v0/gallery/:id', function(request, response){
   });  
 });
 
-
 // middleware
 app.use(function(req, res) {
   res.status(404);
